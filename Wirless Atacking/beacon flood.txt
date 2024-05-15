@@ -1,0 +1,10 @@
+iwconfig-->Mode:Managed
+sudo airmon-ng start wlan0
+iwconfig-->Mode:Monitor
+
+sudo airodump-ng wlan0mon
+
+nano  ssid --> Stone,Hackers,free wi-fi....
+
+sudo apt install mdk3 (mdk4)
+sudo mdk3 wlan0mon b -a -g  -c 1 -f ssid
