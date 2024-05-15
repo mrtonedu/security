@@ -1,0 +1,5 @@
+####CVE-2020-0796  --> Windows 10 (445/tcp open  microsoft-ds firewall==false)
+Scanner : https://github.com/ButrintKomoni/cve-2020-0796.git
+Attacking:https://github.com/jiansiting/CVE-2020-0796.git
+
+####

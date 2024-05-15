@@ -1,0 +1,6 @@
+#Wordlist CRUNCH#
+
+crunch <min> <max> [options]
+crunch 4 4 1234567890  -o [name]
+
+crunch 4 4 -t @,%^  -o [name]  --> aA1\
