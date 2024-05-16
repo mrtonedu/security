@@ -1,0 +1,4 @@
+iwconfig
+-->Monitor:Mode
+sudo kismet -c wlan0mon
+sudo mdk3 wlan0mon a -a bssid
